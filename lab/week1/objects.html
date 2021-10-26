@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    
+    <script>
+
+        var myArray = [1, 2, 3, 4]; 
+        
+        // When you use the curly brackets in "var myObject =" the curly braces are not a code block. Objects are not arrays but arrays are Objects.
+        var myObject = {
+            0: 1, // instead of 0: you can also use "first: 1,"
+            1: 2, // instead of 1: you can also use "second: 2,"
+            2: 3, // instead of 2: you can also use "third: 3,"
+            3: 4, // instead of 3: you can also use "fourth: 4,"
+            "a space": " "
+
+        };
+
+        // A JavaScript object "key" is actually called an Object's Property.
+
+        // Objects can use Square Bracket Notation.
+        console.log(myObject [3]); // can also use console.log(myObject ["third"]);
+        myObject["a space"];
+
+        // and also Dot Notation.
+        console.log(myObject.third); // can also use console.log(myObject.third);
+
+        myArray.length //shows how many objects that are in an ?
+
+        // myObject.a space; Cannot use dot notation for keys with space as it ends up being a syntax error.
+
+        // In Arrays you can only use square brackets.
+
+        // Comparing Objects
+        // Objects are unique even if they appear to hold the exact same key/value pairs.
+        let object1 = {
+            "number": 3
+        };
+        let object2 = {
+            "number": 3
+        };
+
+        if (object1 == object2) {
+            console.log("These objects are the same!");
+        }
+
+        // Copying Objects
+
+        // Copying normal numbers
+
+        let number1 = 1;
+        let number2 = number1;
+        number1 = 100;
+
+        console.log(number2);
+
+        // Doesn't work for objects as you expect them to.
+        let objectA = {
+            "number": 1
+        };
+
+        let objectB = objectA;
+
+        objectA.number = 100;
+
+        console.log(objectB.number);
+
+    </script>
+
+</body>
+</html>

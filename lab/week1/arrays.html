@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+</head>
+<body>
+    
+    <script>
+
+        // A Variable is a reference to some data in memory.
+        // A Variable can only point to one data at a time.
+
+        let aVAriable = 1;
+
+        aVariable = 2; // Using "aVariable without let will replace the "let aVariable".
+
+        // We can use "let anotherVariable" in order for it to acknowledge both "let aVariable and aVariable" or use "let myArray" see below...
+
+        // A individual piece of data in an array is referred to as an "Array Element"
+        let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Update a value in an Array. There is one way of accessing a value in an Array...which is Square Bracket Notation.
+
+        myArray [6] = 70; // You can update a value in an array by adding the = sign and the number you want to update it to.
+        myArray[3]; // You can call a specific array element.
+        aVariable;
+
+        myArray[15] = 16;
+
+        console.log(myArray);
+
+        // Basic Array Method
+        // A "Method", is a function that belongs to an Object. (A string, a number and a value is an Object.)
+
+        // myArray.myFunction (); // This will not work because myArray does not have a myFunction.
+
+        myArray.push(); // Value is placed at the very end of the Array.
+        myArray.pop(); // Removes the last value from the Array.
+        myArray.unshift(); // Adds a value to the start of the Array.
+        myArray.shift(); // Removes the value at the start of the Array.
+
+        // split() Method creates an Array FROM a String.
+        let myString = "Hello There, how are you doing?";
+
+        let myStringArray = myString.split("");
+
+         // When you delete or comment out both "myStringArray.reverse();" and the "console.log(myStringArray);" below from the code then the words from "let myString = above, example: "Hello There, how are you doing?" show up the right way instead of backwards.
+        // myStringArray.reverse();
+
+        // console.log(myStringArray);
+
+        
+        let myUpdatedString = myStringArray.join("");
+
+        console.log(myUpdatedString);
+
+
+    </script>
+
+</body>
+</html>
