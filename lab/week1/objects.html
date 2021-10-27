@@ -10,6 +10,8 @@
     
     <script>
 
+        // Comparing Arrays with Objects. (Arrays are objects)
+
         var myArray = [1, 2, 3, 4]; 
         
         // When you use the curly brackets in "var myObject =" the curly braces are not a code block. Objects are not arrays but arrays are Objects.
@@ -48,6 +50,8 @@
 
         if (object1 == object2) {
             console.log("These objects are the same!");
+        } else {
+            console.log("These objects are not the same!");
         }
 
         // Copying Objects
@@ -70,6 +74,8 @@
         objectA.number = 100;
 
         console.log(objectB.number);
+
+        // You can ma a "copy" of an Object through "Deep Copy". Reference  "Deep vs Shallow object copes for JavaScript". You can make a copy and it will have the same value but written differently.
 
     </script>
 
