@@ -10,20 +10,20 @@
     
     <script>
 
-        let number = 50;
+        let number = 67;
 
         // Operators: ==, <, <=, >, >=, !=
 
-        // If statements always start with a "if" keyword, can have as many "else" if keywords as you want after the "if" keyword, and can end in an "else" keyword, if "else" is used must be at the end. So the order should be: if, then else if, then else.
+        // If statements always start with a "if" keyword, can have as many "else if" keywords as you want after the "if" keyword, and can end in an "else" keyword, if "else" is used must be at the end. So the order should be: if, else if, then else.
         if (number < 25 + 25) {
             console.log(number + " is less than 50.");
         } else if (number < 100) {
             console.log(number + " is in between 49 and 100");
         } else {
-            console.log(number +" is larger than 99")
+            console.log(number + " is larger than 99");
         }
 
-        // A switch statement stats with the keyword switch, the value to be compared to should be in the parenthesis, and then each case should have a potetial match. If it matches it will execute that code. You can do it one of two of the following ways.
+        // A switch statement starts with the keyword switch, the value to be compared to should be in the parenthesis, and then each case should have a potential match. If it matches it will execute that code. You can do it one of two of the following ways.
         // switch (number) {
             // case 25:
                 // console.log(number + " is 25.");
@@ -36,10 +36,11 @@
                 // break;
         // or this:
         switch (true) {
+            // A case is a set of code that executes if the value matches the value in the parenthesis after the switch keyword.
             case (number < 50):
                 console.log(number + " is less than 50.");
                 break;
-            case 50:
+            case (number < 100):
                 console.log(number + " is in between 49 and 100");
                 break;
         // Default is similar to "else" in an if statement, where it executes only if the previous cases don't match.
