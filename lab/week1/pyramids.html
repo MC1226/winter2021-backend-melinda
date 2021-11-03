@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Pyramid Builder</title>
+</head>
+<body>
+
+    <script>
+
+        // console.log("*")
+        // console.log("**")
+        // console.log("***")
+
+        // let pyramidHeight = 5;
+
+        // let pyramidColumn = ""; // put the let pyramidColumn = "" outside of the for loop and by not having the asterisk within the quotation marks will allow the pyramid to start with one asterisk and work along with the loop below.
+
+        // for (let count = 0; count < pyramidHeight; count = count + 1) {
+            
+        // pyramidColumn = pyramidColumn + "*";
+
+        //     console.log(pyramidColumn);
+                        
+        // }
+
+        // for (let count = 0; count < pyramidHeight - 1; count = count + 1) {
+
+        //     let pyramidColumnArray = pyramidColumn.split("");
+
+        //     pyramidColumnArray.pop();
+
+        //     let result = pyramidColumnArray.join("");
+
+        //     pyramidColumnn = result;
+
+        //     console.log(result);
+            
+        // }
+
+        // This is a function that builds a pyramid of text. It accepts two pieces of data: height and symbol, in the pyramidHeight and pyramidCharacter parameters.
+        function pyramidBuilder(pyramidHeight, pyramidCharacter) {
+
+            let pyramidColumn = "";
+
+        for (let count = 0; count < pyramidHeight; count = count + 1) {
+            
+            pyramidColumn = pyramidColumn + pyramidCharacter;
+            console.log(pyramidColumn);
+                        
+        }
+
+        for (let count = 0; count < pyramidHeight - 1; count = count + 1) {
+
+            let pyramidColumnArray = pyramidColumn.split("");
+            pyramidColumnArray.pop();
+            let result = pyramidColumnArray.join("");
+            pyramidColumn = result;
+            console.log(pyramidColumn);
+            }
+            
+        }
+    
+        pyramidBuilder(5, "*");
+        // pyramidBuilder(7, "%");
+        // pyramidBuilder(3, "O");
+        // pyramidBuilder(15, "S");
+
+        // Math.random(); // 0 and .9~
+        // let randomNumber = Math.floor(Math.random() * 24) + 2; // 2 to 25
+        // 25.9~ Using Math.floor in front of Math.random() and adding parenthesis before Math.random and after our number 24 it rounds DOWN the 25.9~ to 24...written this way Math.floor(Math.random() * 24).
+
+        pyramidBuilder(10, "#")
+
+
+        // let question = "***";
+
+        // console.log(question);
+
+        // let questionArray = question.split("");
+
+        // console.log(questionArray);
+
+        // console.log(questionArray[23]);
+
+        // questionArray = pyramidColumn.split("");
+
+        // questionArray.pop(); // questionArray.pop gets rid of the last array
+
+        // console.log(questionArray);
+
+        // let questionArrayResults = questionArray.join("");
+
+        // sconsole.log(questionArrayResults);
+
+        
+
+        // for () {}
+
+    </script>
+
+</body>
+</html>
