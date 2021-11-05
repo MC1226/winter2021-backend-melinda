@@ -15,12 +15,12 @@
 
         let aVariable = 1;
 
-        aVariable = 2; // Using "aVariable without let will replace the "let aVariable".
+        // aVariable = 2; // Using "aVariable without let will replace the "let aVariable".
 
-        let anotherVariable = 2;
         // We can use "let anotherVariable" in order for it to acknowledge both "let aVariable and aVariable" or use "let myArray" see below...
-
-        // A individual piece of data in an array is referred to as an "Array Element"
+        let anotherVariable = 2;
+        
+        // An individual piece of data in an array is referred to as an "Array Element"
         let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
         // Update a value in an Array. There is one way of accessing a value in an Array...which is Square Bracket Notation.
@@ -33,7 +33,7 @@
 
         console.log(myArray);
 
-        // Basic Array Method
+        // Basic Array Methods.
         // A "Method", is a function that belongs to an Object. (A string, a number and a value is an Object.)
 
         // "myArray.myFunction ();" // This will not work because myArray does not have a myFunction.
@@ -51,9 +51,9 @@
         // reverse() method will flip the entire array from left to right, to right to left.
         
          // When you delete or comment out both "myStringArray.reverse();" and the "console.log(myStringArray);" below from the code then the words from "let myString = above, example: "Hello There, how are you doing?" show up the right way instead of backwards.
-        // myStringArray.reverse();
+        myStringArray.reverse();
 
-        // console.log(myStringArray);
+        console.log(myStringArray);
 
         // join() Method creates a String FROM an Array.
         let myUpdatedString = myStringArray.join("");
