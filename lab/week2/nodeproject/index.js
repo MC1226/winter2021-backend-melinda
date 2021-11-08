@@ -6,6 +6,14 @@ let randomNumber = Math.floor((Math.random() * 50) + 25);
 
 let lodashNumber = _.random(25, 75);
 
+let timeNow = Date.getDate();
+
+// timeNow.now();
+
+let lodashTimeNow = _.now();
+
+console.log(timeNow, lashTimeNow);
+
 console.log("Node project starting...");
 
 
