@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Express Server | Home</title>
 </head>
 <body>
-    
-    <p>Hello World!</p>
+
+    <p>Hello world!</p>
 
     <script>
         // Creates an HTTP Request Object.
         let xhr = new XMLHttpRequest();
-
+        
         // We provide the correct type of Request as well as the address that we send it to.
         xhr.open("POST", "http://localhost:3000/test", true);
 
@@ -24,10 +24,14 @@
         xhr.send('{"message": "Hello there!"}');
 
         // We run this function when we get a response from the back-end.
-        xhr.onload = function() {
+        xhr.onload = function () {
+
             console.log("The server has responded.");
+            
+            // this.responseText is the property of the response object, usually holding a JSON String.
+            console.log(this.responseText);
         };
     </script>
-
+    
 </body>
 </html>
